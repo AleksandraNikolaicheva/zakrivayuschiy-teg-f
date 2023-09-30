@@ -1,1 +1,20 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --main_font: "Inter-Variable";
+    --accent_font: "PressStart2P";
+    --font_regular: 465;
+    --font_bold: 785;
+    --bg_color: #000;
+    --accent_color: #00cc14;
+    --background_light: #004306;
+    --background_dark: #007f0c;
+    --stripe_light: #000;
+    --stripe_dark: #d3d3d3;
+    --text_fw: 465;
+    --title_fw: 785;
+    --heart_main: #ff0000;
+    --text-stroke: #000;
+    --text_button: #fff;
+    --text_button_light: #fff;
+    --text_button: var(--text_button_dark);
+    --text_button_dark: #00cc14;
+}
