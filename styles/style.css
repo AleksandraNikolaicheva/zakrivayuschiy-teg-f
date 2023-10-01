@@ -56,6 +56,7 @@
   text-transform: uppercase;
   position: relative;
   transition: 0.3s ease;
+  text-decoration: none;
 }
 
 .theme-menu__button:disabled {
@@ -67,7 +68,6 @@
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  left: -23px;
   animation: arrow 0.5s ease-in-out infinite alternate;
 }
 
@@ -95,6 +95,7 @@
   cursor: pointer;
 }
 
+.theme-menu__button:hover::after,
 .theme-menu__button:focus::after {
   transform: scaleX(1);
 }
@@ -109,6 +110,7 @@
   padding-top: 136px;
   padding-bottom: 20px;
   text-decoration: none;
+  outline: none;
 }
 
 .subtitle {
@@ -146,6 +148,8 @@
 }
 
 .card_image {
+  object-fit: cover;
+  object-position: center;
   width: 100%;
 }
 
@@ -156,8 +160,8 @@
   font-weight: 400;
   line-height: 21px;
   width: 100%;
-  padding: 25px 24px 0;
-  padding-bottom: 0;
+  padding: 26px 24px 0;
+  padding-bottom: 3px;
 }
 
 .card_image_watermark {
@@ -204,7 +208,7 @@
   background: none;
   border: none;
   padding: 0;
-  margin: 0;
+  margin: 0px;
   font-family: inherit;
   font-size: inherit;
   cursor: pointer;
@@ -213,7 +217,8 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   border: 2px solid transparent;
-  margin-right: 12px;
+  margin-right: 5px;
+  margin-top: -2px;
   display: flex;
 }
 
@@ -230,6 +235,7 @@
   border: none;
   padding: 0;
   margin: 0;
+  margin-top: -5px;
   font-family: inherit;
   font-size: inherit;
   cursor: pointer;
@@ -286,7 +292,7 @@
 
 .button {
   border: 2px solid var(--accent_color);
-  padding: 8px 18.5px 21px;
+  padding: 8px 15px 21px;
   padding-top: 15px;
   padding-bottom: 15px;
   cursor: pointer;
@@ -294,6 +300,7 @@
   color: var(--accent_color);
   position: relative;
   overflow: hidden;
+  margin-top: 5px;
 }
 
 .button:hover {
@@ -474,6 +481,9 @@ span.button__text {
 }
 
 @media (width <=375px) {
+  .card_list {
+    gap: 48px;
+  }
   .article {
       padding-top: 120px;
   }
@@ -488,7 +498,7 @@ span.button__text {
 
   .card_text {
       width: 355px;
-      padding: 28px 25px 0;
+      padding: 21px 25px 9px;
   }
 
   .button {
@@ -497,7 +507,8 @@ span.button__text {
   }
 
   .card_button {
-      margin-block-start: 20px;
+      margin-block-start: 18px;
+      margin-bottom: 24px;
   }
 
   .button__text {
